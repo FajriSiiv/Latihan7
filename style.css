@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(146, 86, 86)
+}
+section{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1000;
+}
+section nav{   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    margin: auto 120px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+nav ul{
+    margin: auto 60px;
+    font-weight: 500;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: .2s;
+    font-size: 19px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: royalblue;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.jumbotron{
+    background-image: url(kota1.png);
+    width: 100%;
+    height: 110vh;
+    background-repeat: no-repeat;
+    top: -60px;
+    position: relative;
+    background-size: cover;/* 
+    background-position: 0 -270px; */
+}
+.jumbotron .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+.jumbotron .container h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.jumbotron .container p{
+    font-weight: 500;
+    max-width: 65%;
+    text-align: center;
+    margin-top: 20px;
+}
+.jumbotron .btn{
+    padding: 5px 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+.jumbotron .btn:hover{
+    text-decoration: none;
+    background: white;
+    transform: scale(1.1);
+}
+.feature{
+    width: 100%;
+}
+.feature .container{
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}   
+.feature .container .item{
+    box-shadow: 1px 2px 5px black;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    transition: .4s;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.feature .container .item:hover{
+    background-color: rgb(93, 184, 97);
+    color: rgb(255, 255, 255);
+    
+}
+.feature .container h2{
+    margin:10px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.feature .container i{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+/* How it Works */
+.how{
+    width: 100%;
+    background-color: rgba(76, 146, 173, 0.74);
+    height: 300px;
+}
+.how .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.how .container h2::after{
+    content: '';
+    display: block;
+    width: 50%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.562);
+    padding-bottom: 10px;
+    margin: auto;
+}
+/* 3D */
+.puter{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.puter .container .card i{
+    font-size: 100px;
+    color: yellowgreen;
+}
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+.container .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+.container .card .face.face1{
+    background: rgb(102, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform-origin: bottom;
+}
+.container .card .face.face1 h3{
+    margin: 10px 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container .card:hover .face.face1{
+    transform: translateY(-100%) rotateX(90deg);
+    background: #ff0057;
+}
+.container .card .face.face2{
+    background: rgb(160, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+}
+.container .card .face.face2 p{
+    font-weight: 500;
+    font-size: 15px;
+}
+.container .card:hover .face.face2{
+    transform: translateY(0) rotateX(0deg);
+}
+footer{    
+    background-color: rgba(76, 173, 97, 0.74);
+}
+footer .container{
+    display: flex;
+    flex-direction: row; 
+    padding: 20px 0; 
+}
+footer .container .item{
+    display: flex;
+    flex-direction: column;
+}
+footer .container .item a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    margin: 4px 0;
+}
+footer .container .item a:hover{
+    color: rgba(43, 43, 187, 0.918);
+}
+.footer{
+    margin-top: 20px;
+}
+.footer h5{
+    text-align: center;
+    margin: auto;
+    background-color: rgb(150, 250, 57);
+    padding: 4px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* Responsive */
+/* Laptop */
+@media (min-width:769px){
+    .jumbotron .container h2{
+        font-size: 40px;
+        width: 30%;
+    }
+    .jumbotron .container p{
+        margin-bottom: 20px;
+    }
+    .jumbotron .btn{
+        font-size: 25px;
+    } 
+    .feature{
+    margin-bottom: -20px;
+    }
+    .feature .container .item{
+        background-color: #fff;
+        width: 30%;
+        padding-top: 15px;
+    }
+    .feature .container .item:hover{
+        transform: scale(1.05);
+    }
+    .feature .container{
+        top: -150px;
+    }
+    .how .container{ 
+    padding-top: 10%;
+    height: 50%;
+    }
+    .how .container h2{
+        margin-bottom: 40px;
+    }
+}
+/* Tablet */
+@media (max-width:768px){
+    .jumbotron{
+        background-position: 0 0;
+        height: auto;
+    }
+    .jumbotron h2{
+        max-width: 50%;
+    }
+    .jumbotron p{
+        color:rgba(255, 255, 255, 0.733) ;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .jumbotron .btn{
+        font-size: 19px;
+    }
+    .feature{
+        margin-bottom: 50px;
+    }
+    .feature .container{
+        width: 100%;
+        margin: auto;
+    }
+    .feature .container .item{
+        padding: 10px 20px;
+        width: 48%;
+    }
+    .feature .container .item:nth-child(3){
+        width: 100%;
+    } 
+    .puter .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 18px;
+    }
+    .container i{
+        font-size: 70px;
+    }
+    .container .card .face.face2 p{
+        font-size: 12px;
+    }
+    .container .card{
+        width: 48%;
+    }
+}
+/* HP */
+@media (max-width:576px){
+    section{
+        height: 120px;
+    }
+    section nav{
+        flex-wrap: wrap;
+    }
+    nav p{
+        width: 100%;
+        text-align: center;
+        margin: auto 0; 
+    }
+    nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .jumbotron {
+        top: -120px;
+        height: 120vh;
+    }
+    .jumbotron .container{
+        margin-top: 120px;
+    }
+    .jumbotron h2{
+        max-width: 100%;
+        font-size: 30px;
+    }
+    .jumbotron p{
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .feature{
+        margin-top: -100px;
+    }
+    .feature .container .item{
+        width: 80%;
+        padding: 10px 0;
+    }
+    .feature .container .item:nth-child(3){
+        width: 80%;
+    }
+    .feature .container i{
+        font-size:40px;
+    }
+    .feature .container h2{
+        font-size: 24px;
+    }
+    .feature .container p{
+        font-size: 14px;
+    }
+    .how .container h2{
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .puter .container .card{
+        width: 100%;
+    }
+    .puter .container .card i{
+        font-size: 70px;
+        width: 100%;
+        text-align: center;
+    }
+}
