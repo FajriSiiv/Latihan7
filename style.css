@@ -362,6 +362,7 @@ footer .container .item a:hover{
     .feature .container .item{
         width: 80%;
         padding: 10px 0;
+        margin:10px;
     }
     .feature .container .item:nth-child(3){
         width: 80%;
